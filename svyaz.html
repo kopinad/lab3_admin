@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Дарья  Копина</title>
+		<link rel="stylesheet" type="text/css" href="styleglav.css"> 
+		<link rel="stylesheet" type="text/css" href="styleform.css"> 
+		<link rel="stylesheet" type="text/css" href="styleokno.css"> 
+		<link rel="stylesheet" type="text/css" href="stylenav.css">
+	</head>
+	
+	<body>
+	<header>
+		<div class="navbar">
+			<div class="navbar-m">
+			<div class="navbar.m1">
+			<a href="index.html">Обо мне</a>
+			<a href="index.html#uslugi">Услуги</a>
+			<div class="dropdown">
+				<div class="dropbtn">Примеры работ
+					<i class="fa fa-caret-down"></i>
+				</div>
+				<div class="dropdown-content">
+					<a href="works1.html">Презентации для отчетов</a>
+					<a href="works2.html">Инвестиционные презентации</a>
+					<a href="works3.html">Создание презентации о компании</a>
+					<a href="works4.html">Обновление дизайна презентации</a>
+				</div>
+			</div>
+			<a href="index.html#etaps">Этапы работы</a>
+			<a href="index.html#otzivi">Отзывы</a>
+			<a href="index.html#contacts">Контакты</a>
+			</div>
+			<div class="navbar.m1">
+			<a href="svyaz.html">Заполнение формы для записи</a>
+			</div>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+
+	<h1>Форма для записи</h1>
+
+	<form id="form">
+
+		<div class="form-control">
+			<label for="fio" id="label-name">ФИО</label>
+			<input type="text"
+				id="fio"
+				placeholder="Введите ФИО" />
+		</div>
+		<br>
+		
+		<div class="form-control">
+			<label for="number" id="label-phone">Номер телефона</label>
+			<input type="number"
+				id="phone"
+				placeholder="Введите Ваш номер телефона" />
+		</div>
+		<br>
+		
+		<div class="form-control">
+			<label for="work" id="label-work">Какую услугу Вы бы хотели приобрести?</label>
+			<select name="work" id="work">
+				<option value="otset">Создать презентацию для отчета</option>
+				<option value="invest">Создать инвестиционную презентацию</option>
+				<option value="create">Создать презентации о компании</option>
+				<option value="change">Обновить дизайн презентации</option>
+			</select>
+		</div>
+		<br>
+		
+		<div class="form-control">
+			<label>Где Вам комфортнее продолжать обсуждение заказа?</label>
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp" id="inp">WhatsApp</label>
+			<label for="inp-2">
+				<input type="checkbox" name="inp" id="inp">Telegram</label>
+		</div>
+		<br>
+		
+		<div class="bt">
+			<a href="#openModal"><button type="button" class="btn btn-primary" name="run_script" onclick="document.getElementById('form').reset()" value="reset">Отправить</button></a>
+		</div>
+		<div id="openModal" class="modal">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<a href="index.html" title="Close" class="close">×</a>
+			  </div>
+			  <div class="modal-body">    
+				<div class="dialog">Данные сохранены, спасибо!</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</form>
+	</main>
+	
+	<footer><a name="contacts"></a>
+		<div class="flex-container">
+			<div class="flex-item-footer">
+				<div class="flex-icons"><img src="IMG/icons/Telegram.png" width="69" height="65" alt="Иконка"></div>
+				<div class="flex-icons">
+					<div class="h3">Telegram:</div>
+					<p>@aaaaaa</p>
+				</div>
+			</div>
+			<div class="flex-item-footer">
+				<div class="flex-icons"><img src="IMG/icons/Mobile.png" width="69" height="65" alt="Иконка"></div>
+				<div class="flex-icons">
+					<div class="h3">Mobile:</div>
+					<p>8 999 999 99 99</p>
+				</div>
+			</div>
+			<div class="flex-item-footer">
+				<div class="flex-icons"><img src="IMG/icons/Instagram.png" width="60" height="65" alt="Иконка"></div>
+				<div class="flex-icons">
+					<div class="h3">Instagram*:</div>
+					<p>@aaaaaaaaaa</p>
+				</div>
+			</div>
+			<div class="flex-item-footer">
+				<div class="flex-icons"><img src="IMG/icons/Mail.png" width="60" height="65" alt="Иконка"></div>
+				<div class="flex-icons">
+					<div class="h3">Mail:</div>
+					<p>aaaaaaaaa@gmail.com</p>
+				</div>
+			</div>
+		</div>
+		<div class="p1">Instagram* - запрещенная соц. сеть на территории РФ</div>
+		</footer>
+	</body>
+</html>

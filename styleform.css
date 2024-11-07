@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/novoposelensky');
+
+form{
+	background-color: #323232;
+    max-width: 500px;
+	margin: 50px auto;
+	padding: 30px 30px;
+	border-radius: 15px;
+			
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.form-control {
+	text-align: left;
+	margin-bottom: 25px;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.15;
+	
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.form-control label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+	border: 1px solid #777;
+	border-radius: 2px;
+	padding: 10px;
+	display: block;
+	width: 60%;
+}
+		
+.form-control input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+}
+
+.bt {
+	display: flex;
+	justify-content: center;
+}

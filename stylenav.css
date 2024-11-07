@@ -1,0 +1,79 @@
+@import url('https://fonts.cdnfonts.com/css/novoposelensky');
+
+.navbar{
+	overflow: hidden; /*вехняя панель*/
+	background-color: #323232;
+}
+
+.navbar-m {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Стили ссылок верхней нав.панели */
+.navbar a{
+	float: left; /*выравнивание*/
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	color: white;
+	text-decoration: none;
+}
+
+/* Ссылка выравнивается по правому краю */
+.navbar a.right{
+  float: right;
+}
+
+/* Меняем цвет при наведении мыши */
+.navbar a:hover, .dropdown:hover .dropbtn{
+  color: #D8CAF9;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: #323232;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #3A3A3A;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	color: #D8CAF9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
